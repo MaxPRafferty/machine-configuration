@@ -10,3 +10,6 @@ hi LineNr   cterm=bold ctermbg=16 ctermfg=black gui=bold guibg=gray guifg=white 
 set tabstop=4
 set listchars=trail:▓,precedes:«,extends:»,eol:¬,tab:▫▬,space:· "requires vim patch 7.4.710 to display whitespace replacements
 set list
+filetype plugin indent on "not sure what this one actually does, from http://stackoverflow.com/questions/234564/tab-key-4-spaces-and-auto-indent-after-curly-braces-in-vim
+set expandtab
+
