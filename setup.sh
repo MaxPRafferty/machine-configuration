@@ -1,3 +1,4 @@
 cp ./.vimrc ~/.vimrc
-cp -r ./.vim ~/.vim
+#cp -R ./.vim ~/.vim
+cp -R ~/machine-configuration/.vim/colors/ ~/.vim/colors/
 
