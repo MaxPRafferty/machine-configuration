@@ -1,6 +1,7 @@
 defaults write com.apple.finder AppleShowAllFiles TRUE
 killall Finder
 source ~/.cfgcolors
+export TERM=xterm-256color
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/jslint:/usr/local/go/bin
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced #from http://stackoverflow.com/questions/1550288/mac-os-x-terminal-colors, not sure exactly what this does

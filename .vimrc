@@ -1,4 +1,9 @@
+filetype plugin indent on
+let &t_8f="\e[38;2;%ld;%ld;%ldm"
+let &t_8b="\e[48;2;%ld;%ld;%ldm"
+set guicolors
 syntax on
+set backspace=2
 set background=dark
 execute pathogen#infect()
 filetype plugin indent on
@@ -24,5 +29,5 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exec = '/Users/max/.node/bin/eslint'
 let g:syntastic_javascript_eslint_tail = "--rulesdir /Users/max/nomi21/eslint-rules" 
-colorscheme sourcerer
-syntax on
+colorscheme codeschool 
+
