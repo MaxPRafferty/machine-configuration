@@ -18,6 +18,7 @@ set listchars=trail:▓,precedes:«,extends:»,eol:¬,tab:▫▬,space:· "requi
 set list
 filetype plugin indent on "not sure what this one actually does, from http://stackoverflow.com/questions/234564/tab-key-4-spaces-and-auto-indent-after-curly-braces-in-vim
 set expandtab
+set clipboard=unnamed
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -29,5 +30,15 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exec = '/Users/max/.node/bin/eslint'
 let g:syntastic_javascript_eslint_tail = "--rulesdir /Users/max/nomi21/eslint-rules" 
-colorscheme codeschool 
+colorscheme hybrid
+"cursor options
+highlight Cursor guifg=white guibg=black
+highlight iCursor guifg=white guibg=lightblue
+set guicursor=n-v-c:block-Cursor
+set guicursor+=i:ver100-iCursor
+set guicursor+=n-v-c:blinkon0
+set guicursor+=i:blinkwait10
+
+"**KEY MAPPINGS**
+nmap <Space> i_<Esc>r
 
