@@ -42,3 +42,7 @@ set guicursor+=i:blinkwait10
 "**KEY MAPPINGS**
 nmap <Space> i_<Esc>r
 
+"**PLUGIN SETTINGS**
+"JSX highlighing
+let g:jsx_ext_required = 0
+
