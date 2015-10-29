@@ -1,4 +1,4 @@
-mkdir -p .vim
+mkdir -p ~/.vim
 cp ./.vimrc ~/.vimrc
 #cp -R ./.vim ~/.vim
 cp -R ./.vim/colors/ ~/.vim/colors/
