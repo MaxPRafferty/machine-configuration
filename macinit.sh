@@ -17,6 +17,8 @@ sudo ln -s /usr/local/sbin/mount_ntfs /sbin/mount_ntfs
 brew install ctags
 brew install Caskroom/cask/kaleidoscope
 
+./init.sh
+
 ################## general system settings  ################################
 ## pulled from https://github.com/mathiasbynens/dotfiles/blob/master/.osx ##
 
