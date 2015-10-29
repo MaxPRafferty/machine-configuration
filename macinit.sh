@@ -8,6 +8,12 @@ brew cask install spectacle
 brew cask install iterm2-nightly
 brew cask install chrome-devtools
 brew install hg
+#allow ntfs mount
+brew cask install osxfuse
+brew install homebrew/fuse/ntfs-3g
+sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.original 
+sudo ln -s /usr/local/sbin/mount_ntfs /sbin/mount_ntfs
+
 brew install ctags
 brew install Caskroom/cask/kaleidoscope
 
