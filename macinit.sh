@@ -7,6 +7,7 @@ brew cask install brackets
 brew cask install spectacle
 brew cask install iterm2-nightly
 brew cask install chrome-devtools
+brew cask install xquartz
 brew install hg
 brew install thefuck
 #allow ntfs mount
