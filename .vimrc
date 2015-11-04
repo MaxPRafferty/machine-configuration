@@ -23,13 +23,6 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_javascript_eslint_exec = '/Users/max/.node/bin/eslint'
-let g:syntastic_javascript_eslint_tail = "--rulesdir /Users/max/nomi21/eslint-rules" 
 colorscheme hybrid
 "cursor options
 highlight Cursor guifg=white guibg=black
@@ -45,4 +38,25 @@ cabbrev E Explore
 "**PLUGIN SETTINGS**
 "JSX highlighing
 let g:jsx_ext_required = 0
+"ctrlp ignore folders
+let g:ctrlp_custom_ignore = {'dir':  '\v[\/]\.(git|hg|svn|node_modules)$' }
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,*/node_modules
+"syntastic options
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 1
+let g:syntastic_enable_signs=1
+let g:syntastic_auto_jump=1
+let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
+let g:syntastic_javascript_eslint_exec = '/usr/local/bin/eslint_d'
+"let g:syntastic_javascript_eslint_exec = '/usr/local/bin/eslint'
+let g:syntastic_javascript_checkers = ['eslint']
+"let g:syntastic_javascript_eslint_exec = '/Users/max/.node/bin/eslint'
+"let g:syntastic_javascript_eslint_tail = "--rulesdir /Users/max/nomi21/eslint-rules"
+"let g:syntastic_javascript_eslint_args = "-g ~/code/platform-front/.eslintrc"let g:syntastic_always_populate_loc_list = 1
+"
