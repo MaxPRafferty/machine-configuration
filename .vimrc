@@ -58,6 +58,9 @@ let g:syntastic_javascript_eslint_exec = '/usr/local/bin/eslint_d'
 "let g:syntastic_javascript_eslint_exec = '/usr/local/bin/eslint'
 let g:syntastic_javascript_checkers = ['eslint']
 "let g:syntastic_javascript_eslint_exec = '/Users/max/.node/bin/eslint'
-"let g:syntastic_javascript_eslint_tail = "--rulesdir /Users/max/nomi21/eslint-rules"
-"let g:syntastic_javascript_eslint_args = "-g ~/code/platform-front/.eslintrc"let g:syntastic_always_populate_loc_list = 1
-"
+"let g:syntastic_javascript_eslint_tail = '--rulesdir /Users/max/nomi21/eslint-rules'
+"let g:syntastic_javascript_eslint_args = '-g ~/code/platform-front/.eslintrc'
+
+"powerline setup
+source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+set laststatus=2
