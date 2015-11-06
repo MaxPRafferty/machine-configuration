@@ -14,3 +14,4 @@ git clone https://github.com/ternjs/tern_for_vim.git ~/.vim/bundle/tern
 npm install -g eslint_d
 git clone https://github.com/powerline/fonts.git ~/powerline-fonts
 (cd ~/poweline-fonts/ && ./setup.sh)
+git clone https://github.com/tpope/vim-fugitive.git ~/.vim/bundle/fugitive
