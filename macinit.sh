@@ -19,6 +19,19 @@ sudo ln -s /usr/local/sbin/mount_ntfs /sbin/mount_ntfs
 brew install ctags
 brew install Caskroom/cask/kaleidoscope
 
+brew install python
+pip install --upgrade pip setuptools
+brew install socat
+pip install psutil
+pip install mercurial
+pip install pygit2
+pip install cffi
+brew install libgit2
+pip install pygit2
+pip install bzr
+pip install pyuv
+pip install powerline-status
+
 ./init.sh
 
 ################## general system settings  ################################

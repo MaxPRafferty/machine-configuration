@@ -1,3 +1,4 @@
+. /usr/local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
 defaults write com.apple.finder AppleShowAllFiles TRUE
 killall Finder
 source ~/.cfgcolors
@@ -14,4 +15,5 @@ export PS1="\u@\h \[$txtgrn\]\w\[$txtcyn\]\$(parse_git_branch)\[$txtrst\] \n-> "
 export VISUAL=vim
 export EDITOR="$VISUAL"
 eval "$(thefuck --alias)"
+export DYLD_FORCE_FLAT_NAMESPACE=1
 

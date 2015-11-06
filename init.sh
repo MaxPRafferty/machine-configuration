@@ -12,4 +12,5 @@ git clone https://github.com/ternjs/tern_for_vim.git ~/.vim/bundle/tern
 (cd ~/.vim/bundle/tern && npm install)
 (cd ~/.vim/bundle && git clone https://github.com/scrooloose/syntastic.git)
 npm install -g eslint_d
-
+git clone https://github.com/powerline/fonts.git ~/powerline-fonts
+(cd ~/poweline-fonts/ && ./setup.sh)
