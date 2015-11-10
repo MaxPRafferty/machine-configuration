@@ -22,6 +22,9 @@ set clipboard=unnamed
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+set foldmethod=indent   "fold based on indent
+set foldnestmax=10      "deepest fold is 10 levels
+set nofoldenable        "dont fold by default
 
 colorscheme hybrid
 "cursor options
@@ -33,6 +36,15 @@ set guicursor+=n-v-c:blinkon0
 set guicursor+=i:blinkwait10
 
 "**KEY MAPPINGS**
+nmap <C-a> 0
+nmap <C-e> $
+imap <C-a> <esc>0i
+imap <C-e> <esc>$i
+imap <C-h> <Left>
+imap <C-j> <Down>
+imap <C-k> <Up>
+imap <C-l> <Right>
+
 nmap <Space> i_<Esc>r
 cabbrev E Explore
 "**PLUGIN SETTINGS**

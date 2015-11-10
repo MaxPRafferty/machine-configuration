@@ -15,3 +15,5 @@ npm install -g eslint_d
 git clone https://github.com/powerline/fonts.git ~/powerline-fonts
 (cd ~/poweline-fonts/ && ./setup.sh)
 git clone https://github.com/tpope/vim-fugitive.git ~/.vim/bundle/fugitive
+git clone git://github.com/tpope/vim-surround.git ~/.vim/bundle/surround
+
