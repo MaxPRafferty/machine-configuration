@@ -36,6 +36,10 @@ set guicursor+=n-v-c:blinkon0
 set guicursor+=i:blinkwait10
 
 "**KEY MAPPINGS**
+nmap <C-h> 5h
+nmap <C-j> 5j
+nmap <C-k> 5k
+nmap <C-l> 5l
 nmap <C-a> 0
 nmap <C-e> $
 imap <C-a> <esc>0i
