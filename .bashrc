@@ -16,4 +16,6 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 eval "$(thefuck --alias)"
 export DYLD_FORCE_FLAT_NAMESPACE=1
-
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
