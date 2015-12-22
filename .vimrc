@@ -36,6 +36,7 @@ set guicursor+=n-v-c:blinkon0
 set guicursor+=i:blinkwait10
 
 "**KEY MAPPINGS**
+"quicknav
 nmap <C-h> 5h
 nmap <C-j> 5j
 nmap <C-k> 5k
@@ -49,7 +50,23 @@ imap <C-j> <Down>
 imap <C-k> <Up>
 imap <C-l> <Right>
 
+"un/indenting
+nmap <Tab> V>
+nmap <S-Tab> V<
+vmap <Tab> V>
+vmap <S-Tab> V<
+
+"Quick single char insert
 nmap <Space> i_<Esc>r
+nmap <S-Space> a_<Esc>r
+"^doesnt work on many machines.
+"http://stackoverflow.com/questions/279959/how-can-i-make-shiftspacebar-page-up-in-vim
+"for solutions
+
+"buffer control
+nnoremap <F5> :buffers<CR>:buffer<Space>
+nnoremap <D-Tab> :bnext
+
 cabbrev E Explore
 "**PLUGIN SETTINGS**
 "JSX highlighing
