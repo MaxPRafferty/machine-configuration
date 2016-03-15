@@ -1,5 +1,5 @@
 filetype plugin indent on
-let mapleader "\\"
+let mapleader = "\\"
 let &t_8f="\e[38;2;%ld;%ld;%ldm"
 let &t_8b="\e[48;2;%ld;%ld;%ldm"
 set guicolors
@@ -51,11 +51,14 @@ imap <C-j> <Down>
 imap <C-k> <Up>
 imap <C-l> <Right>
 
+"quickest 2 buffer switch
+nmap <Leader>j :b#<Enter>
+
 "un/indenting
 nmap <Tab> V>
 nmap <S-Tab> V<
-vmap <Tab> V>
-vmap <S-Tab> V<
+vmap <Tab> >
+vmap <S-Tab> <
 
 "Quick single char insert
 nmap <Space> i_<Esc>r
@@ -66,7 +69,7 @@ nmap <S-Space> a_<Esc>r
 
 "buffer control
 nnoremap <F5> :buffers<CR>:buffer<Space>
-nnoremap <D-Tab> :bnext
+nnoremap <C-Tab> :bnext
 
 cabbrev E Explore
 "**PLUGIN SETTINGS**
@@ -88,7 +91,8 @@ let g:syntastic_check_on_wq = 1
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_jump=1
 let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
-let g:syntastic_javascript_eslint_exec = '/usr/local/bin/eslint_d'
+"let g:syntastic_javascript_eslint_exec = '/usr/local/bin/eslint_d'
+let g:syntastic_javascript_eslint_exec = '/usr/local/bin/eslint_m'
 "let g:syntastic_javascript_eslint_exec = '/usr/local/bin/eslint'
 let g:syntastic_javascript_checkers = ['eslint']
 "let g:syntastic_javascript_eslint_exec = '/Users/max/.node/bin/eslint'
