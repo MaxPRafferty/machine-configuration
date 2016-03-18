@@ -9,6 +9,8 @@ git clone https://github.com/bling/vim-bufferline.git ~/.vim/bundle/bufferline
 git clone https://github.com/pangloss/vim-javascript.git ~/.vim/bundle/vim-javascript
 git clone https://github.com/mxw/vim-jsx.git ~/.vim/bundle/vim-jsx
 git clone https://github.com/ternjs/tern_for_vim.git ~/.vim/bundle/tern
+git clone git://github.com/tpope/vim-abolish.git ~/.vim/bundle/vim-abolish
+git clone git@github.com:sjbach/lusty.git ~/.vim/bundle/lusty
 (cd ~/.vim/bundle/tern && npm install)
 (cd ~/.vim/bundle && git clone https://github.com/scrooloose/syntastic.git)
 npm install -g eslint_d
