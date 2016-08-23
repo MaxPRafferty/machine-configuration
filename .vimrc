@@ -54,6 +54,9 @@ imap <C-l> <Right>
 "quickest 2 buffer switch
 nmap <Leader>j :b#<Enter>
 
+"go to next location
+nmap <Leader>n <C-w><C-w>j<Enter>
+
 "un/indenting
 nmap <Tab> V>
 nmap <S-Tab> V<
@@ -71,8 +74,13 @@ nmap <S-Space> a_<Esc>r
 nnoremap <F5> :buffers<CR>:buffer<Space>
 nnoremap <C-Tab> :bnext
 
+"replace all instances of current word
+:nnoremap <Leader>s :OverCommandLine <Enter>:%s/\<<C-r><C-w>\>//g<Left><Left>
+
 cabbrev E Explore
 "**PLUGIN SETTINGS**
+"Overwrite with highlight
+nmap <Leader>o :OverCommandLine <Enter>:%s/
 "JSX highlighing
 let g:jsx_ext_required = 0
 "ctrlp ignore folders
@@ -95,9 +103,18 @@ let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
 let g:syntastic_javascript_eslint_exec = '/usr/local/bin/eslint_m'
 "let g:syntastic_javascript_eslint_exec = '/usr/local/bin/eslint'
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_tail = '--rulesdir /Users/maxrafferty/code/platform-front/eslint-rules'
 "let g:syntastic_javascript_eslint_exec = '/Users/max/.node/bin/eslint'
 "let g:syntastic_javascript_eslint_tail = '--rulesdir /Users/max/nomi21/eslint-rules'
 "let g:syntastic_javascript_eslint_args = '-g ~/code/platform-front/.eslintrc'
+let g:syntastic_error_symbol = '❌'
+let g:syntastic_style_error_symbol = '⁉️'
+let g:syntastic_warning_symbol = '⚠️'
+let g:syntastic_style_warning_symbol = '💩'
+highlight link SyntasticErrorSign SignColumn
+highlight link SyntasticWarningSign SignColumn
+highlight link SyntasticStyleErrorSign SignColumn
+highlight link SyntasticStyleWarningSign SignColumn
 
 "powerline setup
 source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
