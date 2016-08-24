@@ -1,4 +1,8 @@
 npm install -g gulp
+npm install -g eslint_d
+npm install -g eslint-plugin-react
+npm install -g eslint-plugin-babel
+npm install -g babel-eslint
 git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle/YouCompleteMe
 (cd ~/.vim/bundle/YouCompleteMe && git submodule update --init --recursive)
 (cd ~/.vim/bundle/YouCompleteMe && ./install.sh --clang-completer)
