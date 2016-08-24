@@ -21,6 +21,7 @@ brew install ctags
 brew install Caskroom/cask/kaleidoscope
 
 brew install python
+python ./get-pip.py
 pip install --upgrade pip setuptools
 brew install socat
 pip install psutil
@@ -34,6 +35,9 @@ pip install pyuv
 pip install powerline-status
 
 ./init.sh
+
+git clone git@github.com:powerline/fonts.git ~/powerline-fonts
+(cd ~/powerline-fonts && ./install.sh)
 
 ################## general system settings  ################################
 ## pulled from https://github.com/mathiasbynens/dotfiles/blob/master/.osx ##
