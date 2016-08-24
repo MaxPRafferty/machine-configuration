@@ -98,5 +98,8 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 # Show the ~/Library folder
 chflags nohidden ~/Library
 
+#copy powerline config into proper location
+cp ./powerline-config.json /usr/local/lib/python2.7/site-packages/powerline/config_files/config.json
+
 echo "Install complete - don't forget to set your terminal fonts to be powerline compatable"
 
