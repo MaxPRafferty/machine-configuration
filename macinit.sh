@@ -98,4 +98,5 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 # Show the ~/Library folder
 chflags nohidden ~/Library
 
+echo "Install complete - don't forget to set your terminal fonts to be powerline compatable"
 
