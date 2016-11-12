@@ -115,6 +115,8 @@ highlight link SyntasticErrorSign SignColumn
 highlight link SyntasticWarningSign SignColumn
 highlight link SyntasticStyleErrorSign SignColumn
 highlight link SyntasticStyleWarningSign SignColumn
+"lusty explorer hidden mode
+:set hidden
 
 "powerline setup
 source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim

@@ -19,6 +19,7 @@ export DYLD_FORCE_FLAT_NAMESPACE=1
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
+alias svim='sudo vim -u ~/.vimrc'
 alias fig='docker-compose'
 alias figr='docker-compose run'
 alias fign='docker-compose run node'

@@ -22,6 +22,7 @@ brew install ctags
 brew install Caskroom/cask/kaleidoscope
 
 brew install python
+python ./get-pip.py
 pip install --upgrade pip setuptools
 brew install socat
 pip install psutil
@@ -35,6 +36,9 @@ pip install pyuv
 pip install powerline-status
 
 ./init.sh
+
+git clone git@github.com:powerline/fonts.git ~/powerline-fonts
+(cd ~/powerline-fonts && ./install.sh)
 
 ################## general system settings  ################################
 ## pulled from https://github.com/mathiasbynens/dotfiles/blob/master/.osx ##
@@ -95,4 +99,8 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 # Show the ~/Library folder
 chflags nohidden ~/Library
 
+#copy powerline config into proper location
+cp ./powerline-config.json /usr/local/lib/python2.7/site-packages/powerline/config_files/config.json
+
+echo "Install complete - don't forget to set your terminal fonts to be powerline compatable"
 
