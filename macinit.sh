@@ -2,6 +2,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew install git
 brew install npm
 brew install caskroom/cask/brew-cask
+brew install reattach-to-user-namespace
 brew cask install google-chrome
 brew cask install brackets
 brew cask install spectacle
