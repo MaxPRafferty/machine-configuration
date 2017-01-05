@@ -55,7 +55,10 @@ imap <C-l> <Right>
 nmap <Leader>j :b#<Enter>
 
 "go to next location
-nmap <Leader>n <C-w><C-w>j<Enter>
+nmap <Leader>n :lne<Enter>
+
+"go to previous location
+nmap <Leader>m :lpr<Enter>
 
 "un/indenting
 nmap <Tab> V>
