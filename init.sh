@@ -3,6 +3,7 @@ npm install -g eslint_d
 npm install -g eslint-plugin-react
 npm install -g eslint-plugin-babel
 npm install -g babel-eslint
+npm install -g diff-so-fancy
 git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle/YouCompleteMe
 (cd ~/.vim/bundle/YouCompleteMe && git submodule update --init --recursive)
 (cd ~/.vim/bundle/YouCompleteMe && ./install.sh --clang-completer)
@@ -24,4 +25,6 @@ git clone https://github.com/powerline/fonts.git ~/powerline-fonts
 (cd ~/poweline-fonts/ && ./setup.sh)
 git clone https://github.com/tpope/vim-fugitive.git ~/.vim/bundle/fugitive
 git clone git://github.com/tpope/vim-surround.git ~/.vim/bundle/surround
+
+git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 

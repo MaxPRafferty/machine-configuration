@@ -12,6 +12,7 @@ brew cask install xquartz
 brew install hg
 brew install thefuck
 brew install bash-completion
+brew install diff-so-fancy
 #allow ntfs mount
 brew cask install osxfuse
 brew install homebrew/fuse/ntfs-3g
